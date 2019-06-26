@@ -57,8 +57,8 @@ $('a[href*="#"]')
         }
     });
 
-/*=====  Go to Top  ====*/    
-$(window).scroll(function() {
+/*=====  Go to Top  ====*/
+$(window).scroll(function () {
     var height = $(window).scrollTop();
     if (height > 100) {
         $('#back2Top').fadeIn();
@@ -66,11 +66,26 @@ $(window).scroll(function() {
         $('#back2Top').fadeOut();
     }
 });
-$(document).ready(function() {
-    $("#back2Top").click(function(event) {
+$(document).ready(function () {
+    $("#back2Top").click(function (event) {
         event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
         return false;
     });
 
+});
+
+/*=====  WOW JS  ====*/
+new WOW().init();
+
+
+/*=====  PRELOADER JS  ====*/
+var prealoaderOption = $(window);
+prealoaderOption.on("load", function () {
+    var preloader = jQuery('.spinner');
+    var preloaderArea = jQuery('.preloader-area');
+    preloader.fadeOut();
+    preloaderArea.delay(350).fadeOut('slow');
 });

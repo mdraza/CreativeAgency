@@ -10,11 +10,21 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy = "scroll" data-target = ".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Start Preloader -->
+    <div class="preloader-area">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+    <!-- End Preloader -->
 
+    <!--  Start Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
         <div class="container">
             <a class="navbar-brand">Codi<span>fy</span></a>
@@ -46,44 +56,52 @@
             </div>
         </div>
     </nav>
+    <!--  End Navigation -->
+    <!--  Start Header Section  -->
     <section class="header" id="home">
         <div class="wrapper">
             <div class="item">
                 <div class="caption middle text-center">
-                    <h1 class="display-3">Creative Agency</h1>
-                    <p>We are a creative web design agency who makes beautiful websites for thousands of peoples.</p>
-                    <button class="btn btn-primary btn-lg">Get Started</button>
+                    <h1 class="display-3 wow  fadeInLeft" data-wow-delay=".2s">Creative Agency</h1>
+                    <p class="wow fadeInRight " data-wow-delay=".5s">We are a creative web design agency who makes
+                        beautiful websites for thousands of peoples.</p>
+                    <button class="btn btn-primary btn-lg wow  fadeInUp " data-wow-delay=".9s">Get Started</button>
                 </div>
             </div>
         </div>
-
     </section>
+    <!--  End Header Section -->
+    <!--  Start About Us Section  -->
     <section class="about" id="about">
         <div class="container">
             <h2>About Our Agency</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="about-img">
+                    <div class="about-img wow fadeInLeft" data-wow-delay=".2s">
                         <img src="image/about.jpg" alt="about-img" class="rounded">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
-                        <h3>A Creative Webdesign Agency</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                        <h3 class="wow fadeInDown" data-wow-delay=".2s">A Creative Webdesign Agency</h3>
+                        <p class="wow fadeInDown" data-wow-delay=".4s">It is a long established fact that a reader will
+                            be distracted by the readable content of a
                             page when looking at its layout. The point of using Lorem Ipsum is that it has a
                             more-or-less normal distribution of letters.</p>
-                        <a href="javascript:void()" class="btn btn-primary">Learn More</a>
+                        <a href="javascript:void()" class="btn btn-primary wow fadeInDown" data-wow-delay=".6s">Learn
+                            More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--  End About Us Section  -->
+    <!--  Start Service  Section  -->
     <section class="service" id="services">
         <div class="container">
             <h2>Our Services</h2>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s">
                     <div class="service-box mt-40">
                         <div class="icon">
                             <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -96,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay=".4s">
                     <div class="service-box mt-40">
                         <div class="icon">
                             <i class="fa fa-code" aria-hidden="true"></i>
@@ -108,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay=".6s">
                     <div class="service-box mt-40">
                         <div class="icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -122,7 +140,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay=".8s">
                     <div class="service-box mt-30">
                         <div class="icon">
                             <i class="fa fa-tablet" aria-hidden="true"></i>
@@ -135,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="1s">
                     <div class="service-box mt-30">
                         <div class="icon">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -147,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="1.2s">
                     <div class="service-box mt-30">
                         <div class="icon">
                             <i class="fa fa-file-code" aria-hidden="true"></i>
@@ -162,6 +180,8 @@
             </div>
         </div>
     </section>
+    <!--  End Service  Section  -->
+    <!--  Start Contact Now  Section  -->
     <section class="contact-now">
         <div class="inner-section">
             <div class="container">
@@ -180,6 +200,8 @@
             </div>
         </div>
     </section>
+    <!--  End Contact Now Section  -->
+    <!--  Start Skill Section  -->
     <section class="key-skill">
         <div class="container">
             <div class="row">
@@ -223,6 +245,8 @@
             </div>
         </div>
     </section>
+    <!--  End Skill Section  -->
+    <!--  Start Our Work Section  -->
     <section class="our-work" id="portfolio">
         <div class="container">
             <h2>Our Work</h2>
@@ -236,32 +260,32 @@
             </div>
 
             <div class="row grid mt-3">
-                <div class="col-md-4 mt-4 grid-item col1 col4">
+                <div class="col-md-4 mt-4 grid-item col1 col4 wow fadeInUp" data-wow-delay=".2s">
                     <div class="work">
                         <a href="image/1.jpg" class="view-img"><img src="image/1.jpg" alt="work-image-1"></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 grid-item col2">
+                <div class="col-md-4 mt-4 grid-item col2 wow fadeInUp" data-wow-delay=".4s">
                     <div class="work">
                         <a href="image/2.jpg" class="view-img"><img src="image/2.jpg" alt="work-image-2"></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 grid-item col3 col1">
+                <div class="col-md-4 mt-4 grid-item col3 col1 wow fadeInUp" data-wow-delay=".6s">
                     <div class="work">
                         <a href="image/3.jpg" class="view-img"><img src="image/3.jpg" alt="work-image-3"></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 grid-item col4">
+                <div class="col-md-4 mt-4 grid-item col4 wow fadeInUp" data-wow-delay=".8s">
                     <div class="work">
                         <a href="image/4.jpg" class="view-img"><img src="image/4.jpg" alt="work-image-4"></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 grid-item col1 col3">
+                <div class="col-md-4 mt-4 grid-item col1 col3 wow fadeInUp" data-wow-delay="1s">
                     <div class="work">
                         <a href="image/5.jpg" class="view-img"><img src="image/5.jpg" alt="work-image-5"></a>
                     </div>
                 </div>
-                <div class="col-md-4 mt-4 grid-item col2">
+                <div class="col-md-4 mt-4 grid-item col2 wow fadeInUp" data-wow-delay="1.2s">
                     <div class="work">
                         <a href="image/6.jpg" class="view-img"><img src="image/6.jpg" alt="work-image-6"></a>
                     </div>
@@ -269,6 +293,8 @@
             </div>
         </div>
     </section>
+    <!--  End Our Work Section  -->
+    <!--  Start Testimonial Section  -->
     <section class="testimonial" id="testimonial">
         <div class="container">
             <h2>Our Testimonial</h2>
@@ -302,6 +328,8 @@
             </div>
         </div>
     </section>
+    <!--  End Testimonial Section  -->
+    <!--  Start Contact Section  -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="row">
@@ -337,6 +365,8 @@
             </div>
         </div>
     </section>
+    <!--  End Contact Section  -->
+    <!--  Start Footer Section  -->
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -376,6 +406,7 @@
             </div>
         </div>
     </section>
+    <!--  Start Footer Section  -->
     <a id="back2Top" title="Back to top" href="#"><i class="fas fa-arrow-up"></i></a>
     <footer>
         <div class="container">
@@ -401,6 +432,7 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
